@@ -444,19 +444,24 @@ footer {
 
 @media (max-width: 768px) {
 
+  /* HEADER */
   header {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 15px;
   }
 
+  header .logo {
+    font-size: 1.3rem;
+  }
+
+  /* FIX: KEEP MENU IN SAME LINE */
   header ul {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 18px;
     white-space: nowrap;
-    gap: 20px;
-    padding: 5px 0;
+    overflow-x: auto;
     scrollbar-width: none;
   }
 
@@ -467,103 +472,70 @@ footer {
   header ul li {
     flex-shrink: 0;
   }
-}
 
-
-
-  header .logo {
-      font-size: 1.3rem;
-  }
-
-  /* HERO SECTION */
+  /* HERO */
   .hero {
-      height: 60vh;
-      padding: 20px;
+    height: 60vh;
+    padding: 20px;
   }
 
   .hero-text h2 {
-      font-size: 1.7rem;
+    font-size: 1.7rem;
   }
-
   .hero-text p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
-  /* MENU PAGE */
+  /* MENU SECTION */
   .menu-container {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
-}
+  }
 
-.menu-image img {
+  .menu-image img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-}
+  }
 
-.menu-item {
+  .menu-item {
     flex: 1;
     margin-left: 0;
     padding: 10px;
-}
-
-
-  .menu-image img {
-      width: 70%;
-      max-width: 220px;
-      border-radius: 50%;
   }
 
-  .menu-item {
-      width: 100%;
-      margin-left: 0;
-  }
-
-  .menu-item .menu-info {
-      font-size: 0.9rem;
-  }
-
-  /* ABOUT & CONTACT */
-  .about-section, 
+  /* ABOUT / CONTACT */
+  .about-section,
   .contact-section {
-      padding: 20px;
-      font-size: 1rem;
+    padding: 20px;
+    font-size: 1rem;
   }
 
-  .contact-form input, 
+  .contact-form input,
   .contact-form textarea {
-      width: 100%;
+    width: 100%;
   }
 
-  /* FOOTER */
   footer {
-      font-size: 0.8rem;
-      padding: 10px;
+    font-size: 0.8rem;
+    padding: 10px;
   }
 }
 
-/* VERY SMALL MOBILE (PHONES < 480px ) */
+/* VERY SMALL PHONES */
 @media (max-width: 480px) {
-
   .hero-text h2 {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
-
   .menu-section h2 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
-
   .menu-item {
-      padding: 15px;
+    padding: 15px;
   }
-
   .menu-info h3 {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
   }
 }
-
-
-
-
