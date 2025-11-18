@@ -441,20 +441,42 @@ footer {
 }
 
 /* ---------------- MOBILE RESPONSIVE FIXES ---------------- */
+/* MOBILE NAVBAR FIX */
 @media (max-width: 768px) {
-
-  /* NAVBAR */
+  
   header {
       flex-direction: column;
-      padding: 10px;
-      text-align: center;
+      padding: 15px 10px;
+      gap: 10px;
   }
 
   header ul {
       flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
+      gap: 15px;
+      width: 100%;
+      padding: 0;
   }
+
+  header ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  header ul li a {
+      display: block;
+      padding: 10px;
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+  }
+
+  .reserve-btn {
+      display: block;
+      margin: auto;
+      width: fit-content;
+  }
+}
+
 
   header .logo {
       font-size: 1.3rem;
@@ -548,5 +570,6 @@ footer {
       font-size: 0.85rem;
   }
 }
+
 
 
