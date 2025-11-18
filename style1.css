@@ -30,21 +30,26 @@ header .logo {
   color: white;
 }
 
+/* NAVBAR FIX - KEEP ITEMS IN ONE LINE */
 header ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
+  white-space: nowrap; 
+  overflow: hidden;   
+}
+
+header ul li {
+  flex-shrink: 0;
 }
 
 header ul li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: bold;
-  transition: color 0.3s;
-}
-
-header ul li a:hover {
-  color: gold;
+  display: block;
+  padding: 8px 12px;
 }
 
 .reserve-btn {
@@ -539,3 +544,4 @@ footer {
     font-size: 0.85rem;
   }
 }
+
