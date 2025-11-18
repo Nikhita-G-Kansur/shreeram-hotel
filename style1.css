@@ -15,8 +15,8 @@ body {
 /* Header stacked in two rows */
 header {
   display: flex;
-  flex-direction: column; /* stack logo on top, nav below */
-  align-items: center;    /* center both rows */
+  flex-direction: column; /* stack logo first, nav below */
+  align-items: center;    /* center logo and navbar */
   background: #6a3c1e;
   padding: 15px 0;
   position: sticky;
@@ -29,17 +29,23 @@ header .logo {
   font-size: 2rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 10px; /* space between logo and navbar */
+  margin-bottom: 10px;
 }
 
 /* Navbar row */
 header ul {
   list-style: none;
   display: flex;
-  gap: 30px;            /* space between links */
-  justify-content: center; /* center nav under logo */
-  flex-wrap: nowrap;
-  white-space: nowrap;     /* prevent wrapping */
+  gap: 30px;             /* spacing between links */
+  justify-content: center; /* center navbar links */
+  flex-wrap: nowrap;       /* prevent wrapping */
+  margin: 0;               /* remove default margin */
+  padding: 0;              /* remove default padding */
+  width: auto;             /* ensure it shrinks to content */
+}
+
+header ul li {
+  flex: none;              /* prevent items from stretching */
 }
 
 header ul li a {
@@ -47,6 +53,8 @@ header ul li a {
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
+  display: block;
+  text-align: center;      /* center text inside links */
 }
 
 header ul li a:hover {
@@ -60,10 +68,7 @@ header ul li a:hover {
   }
   header ul {
     gap: 15px;
-    overflow-x: auto; /* horizontal scroll if screen too small */
-  }
-  header ul li {
-    flex-shrink: 0;
+    overflow-x: auto;
   }
 }
 
@@ -460,5 +465,6 @@ footer {
   color: #fff; /* visible against dark background */
   font-weight: normal;
 }
+
 
 
