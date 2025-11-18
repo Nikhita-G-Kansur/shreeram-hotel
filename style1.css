@@ -12,40 +12,61 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* Header stacked in two rows */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* stack logo on top, nav below */
+  align-items: center;    /* center both rows */
   background: #6a3c1e;
-  padding: 15px 30px;
+  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* Logo row */
 header .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 10px; /* space between logo and navbar */
 }
 
+/* Navbar row */
 header ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;            /* space between links */
+  justify-content: center; /* center nav under logo */
+  flex-wrap: nowrap;
+  white-space: nowrap;     /* prevent wrapping */
 }
 
 header ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  padding: 8px 12px;
 }
 
 header ul li a:hover {
   color: gold;
 }
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  header .logo {
+    font-size: 1.5rem;
+  }
+  header ul {
+    gap: 15px;
+    overflow-x: auto; /* horizontal scroll if screen too small */
+  }
+  header ul li {
+    flex-shrink: 0;
+  }
+}
+
 
 .reserve-btn {
   background: gold;
@@ -439,4 +460,5 @@ footer {
   color: #fff; /* visible against dark background */
   font-weight: normal;
 }
+
 
