@@ -13,31 +13,33 @@ body {
 }
 
 /* Header */
+/* Header as column */
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   background: #6a3c1e;
-  padding: 15px 30px;
+  padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* Logo row */
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 10px;
 }
 
-/* NAVBAR FIX - KEEP ITEMS IN ONE LINE */
+/* Navbar row */
 header ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px; 
   flex-wrap: nowrap;
-  white-space: nowrap; 
-  overflow: hidden;   
+  white-space: nowrap;
 }
 
 header ul li {
@@ -51,6 +53,12 @@ header ul li a {
   display: block;
   padding: 8px 12px;
 }
+
+
+header ul li a:hover {
+  color: gold;
+}
+
 
 .reserve-btn {
   background: gold;
@@ -544,4 +552,5 @@ footer {
     font-size: 0.85rem;
   }
 }
+
 
