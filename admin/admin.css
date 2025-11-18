@@ -1,0 +1,73 @@
+body {
+    background: #fffaf0;
+    font-family: Arial, sans-serif;
+}
+
+.admin-container {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #caa56e;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #caa56e;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    background: #8b4513;
+    color: white;
+    padding: 12px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6f370f;
+}
+
+.invoice-box {
+    margin-top: 25px;
+    background: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #d2b48c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #d2b48c;
+    padding: 10px;
+}
+
+th {
+    background: #ffe4c4;
+}
+
+#grandTotal {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #8b4513;
+}
+
+@media print {
+    select, input, button {
+        display: none;
+    }
+}
