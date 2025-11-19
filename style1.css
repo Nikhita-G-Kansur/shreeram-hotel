@@ -466,5 +466,40 @@ footer {
   font-weight: normal;
 }
 
+/* Thank You Page Styles */
+.thank-you-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center;
+  background-color: #a0522d;
+  color: #fff;
+}
+
+.thank-you-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.thank-you-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.thank-you-text .btn {
+  padding: 12px 25px;
+  background-color: gold;
+  color: #222;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.thank-you-text .btn:hover {
+  background-color: #ffcc33;
+}
+
+
 
 
