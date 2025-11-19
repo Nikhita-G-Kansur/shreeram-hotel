@@ -4,6 +4,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Splash Screen Overlay */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fdf6e3; /* soft background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+/* Animated Hotel Text */
+.animated-text {
+  font-size: 4em;
+  font-weight: bold;
+  color: #a0522d; /* hotel brown */
+  opacity: 0;
+  animation: fadeInScale 2s forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 body {
   font-family: 'Arial', sans-serif;
@@ -506,6 +544,7 @@ footer {
 .thank-you-text .btn:hover {
   background-color: #ffcc33;
 }
+
 
 
 
