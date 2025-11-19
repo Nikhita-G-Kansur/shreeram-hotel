@@ -41,6 +41,26 @@
     font-size: 2.5rem;
   }
 }
+/* Slide-in animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animation to splash hotel name */
+#splash-screen .splash-content {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: slideInLeft 2s ease-out forwards;
+  opacity: 0; /* hidden before animation */
+}
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -543,6 +563,7 @@ footer {
 .thank-you-text .btn:hover {
   background-color: #ffcc33;
 }
+
 
 
 
