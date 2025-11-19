@@ -469,12 +469,19 @@ footer {
 /* Thank You Page Styles */
 .thank-you-section {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
   background-color: #a0522d;
   color: #fff;
+  padding: 0 20px;
+}
+
+.thank-you-text {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .thank-you-text h1 {
@@ -499,6 +506,8 @@ footer {
 .thank-you-text .btn:hover {
   background-color: #ffcc33;
 }
+
+
 
 
 
