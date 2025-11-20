@@ -1,13 +1,16 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent page refresh
+    event.preventDefault();
 
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-  if (username === "nn" && password === "1234") {
-    alert("Login Successful!");
-    window.location.href = "admin.html";
-  } else {
-    alert("Invalid Username or Password");
-  }
+    const correctUser = "nn";   // your chosen username
+    const correctPass = "1234";    // your chosen password
+
+    if (username === correctUser && password === correctPass) {
+        sessionStorage.setItem("adminLoggedIn", "true");
+        window.location.href = "admin.html";
+    } else {
+        alert("Invalid username or password");
+    }
 });
