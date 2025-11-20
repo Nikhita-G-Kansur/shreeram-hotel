@@ -18,7 +18,7 @@ const menuItems = [
     { name: "Chicken Sukka", price: 200 },
     { name: "Kabab Rice", price: 220 },
     { name: "Chicken Biryani", price: 250 },
-    { name: "Chicken Role", price: 120 },
+    { name: "Chicken Roll", price: 120 },
     { name: "Chicken Meals", price: 300 },
 
     // EGG
@@ -29,7 +29,7 @@ const menuItems = [
     { name: "Egg Curry", price: 60 },
     { name: "Egg Rice", price: 70 },
     { name: "Egg Biryani", price: 100 },
-    { name: "Egg Role", price: 50 },
+    { name: "Egg Roll", price: 50 },
     { name: "Egg Meals", price: 120 },
 
     // MUTTON
@@ -91,3 +91,4 @@ function addToBill() {
     total += itemTotal;
     document.getElementById("grandTotal").textContent = "Grand Total: ₹" + total;
 }
+
