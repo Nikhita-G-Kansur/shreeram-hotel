@@ -15,6 +15,8 @@
 <body>
 
 <div class="admin-container">
+    <button onclick="logout()" style="float:right; background:red; color:white; padding:6px 12px; border:none; border-radius:4px; cursor:pointer;">Logout</button>
+
     <h2>Shree Ram Restaurant</h2>
     <p style="font-size: 0.9rem; line-height: 1.4;">In front of Bharat Petroleum Pump, Sirsi-Hubli Road,<br> Shanti Nagar, Sirsi, Karnataka, 581402  <br> Phone: +91 91412 23866  </p>
 
@@ -44,8 +46,16 @@
 </div>
 
 <script src="admin.js"></script>
+<script>
+  function logout() {
+      sessionStorage.removeItem("adminLoggedIn");
+      window.location.href = "login.html";
+  }
+</script>
+
 </body>
 </html>
+
 
 
 
